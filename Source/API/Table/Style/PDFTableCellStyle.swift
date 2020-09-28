@@ -36,7 +36,7 @@ public struct PDFTableCellStyle {
      */
     public init(colors: (fill: Color, text: Color) = (Color.clear, Color.black),
                 borders: PDFTableCellBorders = PDFTableCellBorders(),
-                font: Font = Font.systemFont(ofSize: PDFConstants.defaultFontSize)) {
+                font: Font = Font.systemFont(ofSize: Font.systemFontSize)) {
         self.colors = colors
         self.borders = borders
         self.font = font
@@ -47,5 +47,5 @@ extension PDFTableCellStyle {
 
     public static let none = PDFTableCellStyle(colors: (fill: Color.clear, text: Color.black),
                                                borders: .none,
-                                               font: Font.systemFont(ofSize: PDFConstants.defaultFontSize))
+                                               font: Font.systemFont(ofSize: Font.systemFontSize))
 }

@@ -14,7 +14,7 @@ import AppKit
 /**
  TODO: Documentation
  */
-public class PDFTableContent: CustomStringConvertible {
+public class PDFTableContent {
 
     /**
      TODO: Documentation
